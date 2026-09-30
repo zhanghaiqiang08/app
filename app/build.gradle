@@ -1,0 +1,26 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.example.inspirationrecorder'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.example.inspirationrecorder"
+        minSdk 24
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+    }
+}
+
+dependencies {
+    // 不依赖任何第三方库，保证离线也能编译
+}
